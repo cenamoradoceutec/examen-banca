@@ -59,6 +59,5 @@ export const BankProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
 export const useBank = () => {
   const context = useContext(BankContext);
-  if (!context) throw new Error('useBank debe usarse dentro de BankProvider');
   return context;
 };
